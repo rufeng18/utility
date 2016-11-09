@@ -1,0 +1,5 @@
+#tcpdump 查看端口数据
+tcpdump -i eth0 host 202.121.132.10 and port 8001 -s0 -X
+
+#查找文件里字符
+find .  -name "*.php" | xargs grep "$1" --color=always  
