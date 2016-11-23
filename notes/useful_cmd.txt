@@ -3,3 +3,9 @@ tcpdump -i eth0 host 202.121.132.10 and port 8001 -s0 -X
 
 #查找文件里字符
 find .  -name "*.php" | xargs grep "$1" --color=always  
+
+#查看端口被什么程序占用
+netstat -tnpl | grep 20001
+
+#通过程序pid查看程序
+lsof -p pid
